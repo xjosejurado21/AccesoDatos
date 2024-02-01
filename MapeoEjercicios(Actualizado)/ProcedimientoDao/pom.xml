@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ProcedimientoDao</groupId>
+	<artifactId>ProcedimientoDao</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ProcedimientoDao</name>
+	<dependencies>
+		<dependency>
+			<groupId>com.example</groupId>
+			<artifactId>myproject</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<!-- Hibernate Core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.6.4.Final</version>
+		</dependency>
+
+		<!-- Hibernate EntityManager -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.6.4.Final</version>
+		</dependency>
+
+		<!-- Oracle JDBC Driver -->
+		<!-- Ten en cuenta que el driver de Oracle no está disponible en el
+		repositorio central de Maven. -->
+		<!-- Necesitarás agregarlo manualmente a tu repositorio local de Maven o
+		configurar un repositorio privado. -->
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>19.3.0.0</version>
+		</dependency>
+
+	</dependencies>
+</project>
